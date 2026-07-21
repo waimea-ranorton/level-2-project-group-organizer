@@ -2,17 +2,22 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
-
+Often group projects become hectic, files and documents become scrambled, people forget what parts they need to do and when they need to do them by, everyone ends up with their own individual work that needs combining and organizing, ect.
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+My client is a student, which is where the problem came from, a need for organizing class projects, however I could imagine this app also being used in workplaces.
+These end-users need a quick to use app, 
 
+Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+My app aims to organize these groups, providing a base for their project, here members of the group can:
+-Add and access each related file,
+-Attach people to files, say Alex is attached to the powerpoint and Steve and Steven are working on the word document,
+-Add notes regarding each file or the project as a whole, 
+-Add roles under each person, in some way users can look or add things people are responsible over, 
 
 
 # Relevant Implications
