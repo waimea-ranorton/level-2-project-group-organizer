@@ -7,18 +7,11 @@ Often group projects become hectic, files and documents become scrambled, people
 ## End-User Requirements
 
 My client is a student, which is where the problem came from, a need for organizing class projects, however I could imagine this app also being used in workplaces.
-These end-users need a quick to use app, 
-
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+These end-users need the app to be: Quick to use, Live updating, Accessible Useable, ECT.
 
 ## Proposed Solution
 
-My app aims to organize these groups, providing a base for their project, here members of the group can:
--Add and access each related file,
--Attach people to files, say Alex is attached to the powerpoint and Steve and Steven are working on the word document,
--Add notes regarding each file or the project as a whole, 
--Add roles under each person, in some way users can look or add things people are responsible over, 
-
+My app aims to organize these groups, providing a base for their project, here members of the group can: Add and access each related file, Attach people to files (say Alex is attached to the powerpoint and Steve and Steven are working on the word document), Add notes regarding each file or the project as a whole, Add roles under each person, in some way users can look or add things people are responsible over, ECT
 
 # Relevant Implications
 
