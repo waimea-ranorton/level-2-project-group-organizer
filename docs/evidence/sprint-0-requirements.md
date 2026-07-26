@@ -9,7 +9,9 @@ Often group projects become hectic, files and documents become scrambled, people
 My client is a student, which is where the problem came from, a need for organizing class projects, however I could imagine this app also being used in workplaces.
 As of right now my end-user has stressed need for the app to be:
 
-Useable and Quick to use, Live updating, and Accessible.
+-Useable and Quick to use, 
+-Live updating, 
+-and Accessible.
 
 ## Proposed Solution
 
@@ -93,5 +95,3 @@ The aesthetics of this app are important regarding audience/user appeal, whether
 I plan to consider aesthetics by:
 
 using one consistent colour palette and font styles throughout the entire app, keeping page layouts clean and consistent as to not overwhelm the user, and using generic layouts (header near top, nav near top, body in middle, ect).
-
-

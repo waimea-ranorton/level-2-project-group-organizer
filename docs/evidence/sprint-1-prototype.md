@@ -15,6 +15,7 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Primary keys
     - Default / nullable values
     - Relationships (foreign keys)
+    
 - Design the UI
     - Key pages
     - User interactions and 'flow'
