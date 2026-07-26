@@ -9,7 +9,7 @@ Often group projects become hectic, files and documents become scrambled, people
 My client is a student, which is where the problem came from, a need for organizing class projects, however I could imagine this app also being used in workplaces.
 As of right now my end-user has stressed need for the app to be:
 
-*Useable and Quick to use, Live updating, and Accessible.
+Useable and Quick to use, Live updating, and Accessible.
 
 ## Proposed Solution
 
