@@ -55,7 +55,7 @@ I intent to optimize functionality by: Testing each button, form, link, post etc
 
 ## ACCESSIBILITY------------------------------------------------
 
-Acessibilit means for somthing to be able to be used by the widest range of people possible.
+Accessability means for something to be able to be used by the widest range of people possible.
 
 ### Relevance to the System
 
@@ -63,20 +63,19 @@ Acessibilit means for somthing to be able to be used by the widest range of peop
 
 ### Impact / Considerations
 
-I aim to make my app acessible to as many users as possible through implementing things such as: Having generic HTML tags (header, main, nav, section, etc), adding 'alt' text to any images to a screen-reader can read it out, having good contrast of values.
+I aim to make my app accessible to as many users as possible through implementing things such as: Having generic HTML tags (header, main, nav, section, etc), adding 'alt' text to any images (so a screen-reader can read it out ), having good contrast of values, legible fonts, simple to use processes, ect.
 
 
+## Aesthetics------------------------------------------------
 
-## NAME OF IMPLICATION 5
-
-Replace this text with a clear explanation of what the implication means.
+The visual design of something.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+The aesthetics of this app are important regarding audience/user appeal, whether it fits the apps purpose, wether it follows recognized design conventions (nav at top, home shown with home icon, ect), wether it conveys the correct image and or tone, ect.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I plan to consider aesthetics by using one consistent colour palette and font styles throughout the entire app, keeping page layouts clean and consistent as to not overwhelm the user, and using generic layouts (header near top, nav near top, body in middle, ect).
 
 
