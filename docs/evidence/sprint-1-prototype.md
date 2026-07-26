@@ -15,14 +15,16 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Primary keys
     - Default / nullable values
     - Relationships (foreign keys)
-    
+
 - Design the UI
     - Key pages
     - User interactions and 'flow'
     - Page layouts / features
     - Colour palette
     - Etc.
-
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 ## Initial Database Design
 
