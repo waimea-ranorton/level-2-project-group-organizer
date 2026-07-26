@@ -7,7 +7,10 @@ Often group projects become hectic, files and documents become scrambled, people
 ## End-User Requirements
 
 My client is a student, which is where the problem came from, a need for organizing class projects, however I could imagine this app also being used in workplaces.
-As of right now my end-user has stressed need for the app to be: Quick to use, Live updating, Accessible, and Useable.
+As of right now my end-user has stressed need for the app to be:
+-Useable and Quick to use,
+-Live updating,
+-and Accessible.
 
 ## Proposed Solution
 
