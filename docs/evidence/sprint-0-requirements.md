@@ -31,7 +31,7 @@ This app needs to be "Quick to use" as I mentioned earlier, on top of this, if t
 
 I plan to make my site easy to use by:
 
-Keeping things such as navigation and buttons, fonts and colors consistent throughout the whole app, sticking to the general layout for apps/websites (heading at top, nav at top, main body in middle, footer at bottom, ECT), showing clear feedback to users (when a document is added, small pop-up saying so, when a button is pressed it changes colour, etc.)
+Keeping things such as navigation and buttons, fonts and colors consistent throughout the whole app, sticking to the general layout for apps/websites (heading at top, nav at top, main body in middle, footer at bottom, etc), showing clear feedback to users (when a document is added, small pop-up saying so, when a button is pressed it changes colour, etc.)
 
 ## END USER 
 
