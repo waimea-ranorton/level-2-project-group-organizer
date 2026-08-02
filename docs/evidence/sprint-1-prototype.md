@@ -22,7 +22,7 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Etc.
 
 ## Initial Database Design
-![Alt text](image-3.png)
+![Alt text](screenshots/Tables.png)
 - lhgfl
 - hfhfgi
 
@@ -84,9 +84,9 @@ Having established the layout of the UI screens, the prototype was refined visua
 
 My user asked specifically for a dull, monochromatic, purple, colour palette, that uses black and white for details.
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+![Alt text](screenshots/colorpallete.png)
+![Alt text](screenshots/colorpallete2.png)
+![Alt text](screenshots/colorpallete3.png)
 
 This Figma demo shows the UI with refinements applied:
 
