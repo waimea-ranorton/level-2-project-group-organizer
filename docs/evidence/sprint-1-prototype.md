@@ -91,11 +91,15 @@ Replace this text with notes any improvements you made as a result of the testin
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
-My user asked specifically for a dull, monochromatic, purple, colour palette, that uses black and white for details.
+My user asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
 
 ![Alt text](screenshots/colorpallete.png)
 ![Alt text](screenshots/colorpallete2.png)
 ![Alt text](screenshots/colorpallete3.png)
+
+After showing these pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they like the more destaturated one.
+
+![Alt text](screenshots/colorpallete4.png)
 
 This Figma demo shows the UI with refinements applied:
 
