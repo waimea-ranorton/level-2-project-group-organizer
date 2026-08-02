@@ -28,19 +28,21 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 ### Required Data Input
 
-When people make an account, they are required to put a name and contact/s.
-When people create a project they are required to enter who is apart of the project,
-(they could add the person through the id that is automatically given to the user when they create an account, or they could look up their name).
-When people create a project they are required to enter a name for it, and if it has a deadline, during the project they can change the status between unfinished and finished.
-When people add a file to a project they can give it a "use", they will be suggested to say "Working file" or "Resource" but can put anything they like.
+- When people make an account, they are required to put a name and contact/s, this can be viewed on a profile page/drop-down.
 
+- When people create a project they are required to enter who is apart of the project,
+(they could add the person through the id that is automatically given to the user when they create an account, or they could look up their name), this can be viewed in a section about project details.
+
+- When people create a project they are required to enter a name for it, and if it has a deadline, during the project they can change the status between unfinished and finished, this can be viewed on the projects page.
+
+- When people add a file to a project they can give it a "use", they will be suggested to say "Working file" or "Resource" but can put anything they like, this should be viewable just under the file.
 
 ### Required Data Output
 
 The system will display
 - integers
 - text
-- text?
+- text? (some text can be null, see design screenshot above)
 
 ### Required Data Processing
 
