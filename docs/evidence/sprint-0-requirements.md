@@ -15,7 +15,7 @@ Useable and Quick to use, Live updating, and Accessible.
 
 My app aims to organize these groups, providing a base for their project, here members of the group can:
 
-Add and access each related file, Attach people to files (say Alex is attached to the powerpoint and Steve and Steven are working on the word document), Add notes regarding each file or the project as a whole, Add roles under each person, etc.
+Add and access each related file, Attach people to files (say Alex is attached to the powerpoint and Steve and Steven are working on the word document), Add notes regarding each task or the project as a whole, Add roles under each person, etc.
 
 # Relevant Implications
 

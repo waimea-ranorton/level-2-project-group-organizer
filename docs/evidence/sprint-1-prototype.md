@@ -7,8 +7,6 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 ### Specific Goals
 
-**Edit these goals as needed**
-
 - Design the database:
     - Tables
     - Fields / types
@@ -22,15 +20,11 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Page layouts / features
     - Colour palette
     - Etc.
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
 
 ## Initial Database Design
-
-Replace this text with notes regarding the DB design.
-
-![DB Design](screenshots/placeholder.png)
+![Alt text](image-3.png)
+- lhgfl
+- hfhfgi
 
 
 ### Required Data Input
@@ -87,6 +81,12 @@ Replace this text with notes any improvements you made as a result of the testin
 ## Refined UI Prototype
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
+
+My user asked specifically for a dull, monochromatic, purple, colour palette, that uses black and white for details.
+
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 This Figma demo shows the UI with refinements applied:
 
