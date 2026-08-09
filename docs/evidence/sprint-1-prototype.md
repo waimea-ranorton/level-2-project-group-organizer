@@ -23,10 +23,10 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 ## Initial Database Design
 ![Alt text](screenshots/Tables.png)
-- lhgfl
-- hfhfgi
 
 ### Required Data Input
+
+The system will get
 
 - When people make an account, they are required to put a name and contact/s, this can be viewed on a profile page/drop-down.
 
@@ -87,7 +87,7 @@ Replace this text with notes any improvements you made as a result of the testin
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 
-## Refined UI Prototype
+## Refined UI Prototype     
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
@@ -97,7 +97,7 @@ My user asked specifically for a dull, "peaceful", purple, colour palette, that 
 ![Alt text](screenshots/colorpallete2.png)
 ![Alt text](screenshots/colorpallete3.png)
 
-After showing these pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they like the more destaturated one.
+After showing these pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
 
 ![Alt text](screenshots/colorpallete4.png)
 
