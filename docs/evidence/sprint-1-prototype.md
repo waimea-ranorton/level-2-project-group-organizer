@@ -69,23 +69,30 @@ I added a splash screen.
 
 *https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76ea4f9686b4*
 
-### Changes / Improvements
-
-When I was making my in-depth template, I resized that having only one page for all finished and upcoming projects could make the user scroll a lot. So I separated them like so.
-
-I also decided that projects on the home page should separated into due and finished projects, so its easier for users to find things, and that due projects should be displayed in order of when its due.
-
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
-
 
 ## Initial UI Prototype
 
 The next stage of prototyping was to develop the layout for each screen of the UI.
 
-This Figma demo shows the initial layout design for the UI:
+### Changes / Improvements
 
-*FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+When I was making my layouts for each screen, I resized that having only one page for all finished and upcoming projects could make the user scroll a lot. So I separated them (see below).
+
+I also decided that projects on the home page should separated into due and finished projects, so its easier for users to find things, and that due projects should be displayed in order of when its due.
+
+![Alt text](screenshots/flow3.png)
+
+*https://design.penpot.app/#/view?file-id=3be9e5e1-190f-8090-8008-6de71b4fba1b&page-id=3be9e5e1-190f-8090-8008-6de71b4fba1c&section=interactions&index=0&share-id=81f57451-85cc-819d-8008-76ef30d55776*
+
+### Testing
+
+I realized that having the home page may be unessisary, and maybe the app should just immediately go to the upcoming projects. I asked my user what they thought of this.
+
+I showed this updated UI template to my user.
+
+### Changes / Improvements
+
+We agreed that...
 
 ### Testing
 
