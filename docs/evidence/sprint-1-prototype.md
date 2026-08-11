@@ -111,6 +111,10 @@ So I came up with these colour palletes:
 I showed these colour palletes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
 
 ![Alt text](screenshots/colorpallete4.png)
+![Alt text](screenshots/colorpallete5.png)
+![Alt text](screenshots/colorpallete6.png)
+![Alt text](screenshots/colorpallete7.png)
+![Alt text](screenshots/colourpallete8.png)
 
 I showed these colour palletes to my end-user, they said...
 
