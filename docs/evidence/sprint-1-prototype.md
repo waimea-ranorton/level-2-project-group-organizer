@@ -54,12 +54,13 @@ Replace this text with a description of how the data will be processed to achiev
 The first stage of prototyping was to explore how the UI might 'flow' between states, based on the required functionality.
 
 This Figma demo shows the initial design for the UI 'flow':
+![UI Flow 1](screenshots/flow1.png)
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
+**https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76dc16543f9c**
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+I showed this UI flow template to my end-user, they didn't like how it opened right to the home screen, they asked if there could be some sort of loading screen/splash screen before hand.
 
 ### Changes / Improvements
 
