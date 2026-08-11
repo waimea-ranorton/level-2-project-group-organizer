@@ -93,31 +93,26 @@ I showed this updated UI template to my user.
 ### Changes / Improvements
 
 We agreed that...
-
-### Testing
-
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
+So I...
+They liked that...
 
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
 
 ## Refined UI Prototype     
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
-My user asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
-
+I has a conversation with my user before going into this, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
+So I came up with these colour palletes:
 ![Alt text](screenshots/colorpallete.png)
 ![Alt text](screenshots/colorpallete2.png)
 ![Alt text](screenshots/colorpallete3.png)
 
-After showing these pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
+I showed these colour palletes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
 
 ![Alt text](screenshots/colorpallete4.png)
+
+I showed these colour palletes to my end-user, they said...
 
 This Figma demo shows the UI with refinements applied:
 
