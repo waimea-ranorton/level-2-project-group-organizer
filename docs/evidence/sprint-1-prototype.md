@@ -56,7 +56,7 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 This Figma demo shows the initial design for the UI 'flow':
 ![UI Flow 1](screenshots/flow1.png)
 
-**https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76dc16543f9c**
+*https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76dc16543f9c*
 
 ### Testing
 
@@ -64,9 +64,19 @@ I showed this UI flow template to my end-user, they didn't like how it opened ri
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I added a splash screen.
+![Alt text](screenshots/flow2.png)
+
+*https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76ea4f9686b4*
+
+### Changes / Improvements
+
+When I was making my in-depth template, I resized that having only one page for all finished and upcoming projects could make the user scroll a lot. So I separated them like so.
+
+I also decided that projects on the home page should separated into due and finished projects, so its easier for users to find things, and that due projects should be displayed in order of when its due.
 
 *IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+
 
 
 ## Initial UI Prototype
