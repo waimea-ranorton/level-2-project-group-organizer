@@ -96,7 +96,9 @@ We agreed that...
 So I...
 They liked that...
 
-*FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+![Alt text](screenshots/flow4.png)
+
+*https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-772f6aae5fb0&page-id=81f57451-85cc-819d-8008-772f6aae5fb1&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-7962b28e1c45*
 
 ## Refined UI Prototype     
 
@@ -108,7 +110,7 @@ So I came up with these colour palletes:
 ![Alt text](screenshots/colorpallete2.png)
 ![Alt text](screenshots/colorpallete3.png)
 
-I showed these colour palletes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
+I showed these colour pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
 
 ![Alt text](screenshots/colorpallete4.png)
 ![Alt text](screenshots/colorpallete5.png)
@@ -116,9 +118,11 @@ I showed these colour palletes to my end-user, they asked for the colour palette
 ![Alt text](screenshots/colorpallete7.png)
 ![Alt text](screenshots/colourpallete8.png)
 
-I showed these colour palletes to my end-user, they said...
+I showed these colour pallettes to my end-user, they said...
 
-This Figma demo shows the UI with refinements applied:
+They quiet liked these colours but wanted to make minor changes, they sent back this color pallete, 
+![Alt text](image.png)
+![Alt text](image-1.png)
 
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
