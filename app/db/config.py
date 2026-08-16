@@ -28,6 +28,19 @@ class NoteTable:
             created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     """
+class PeopleTable:
+
+    NAME = "note"
+
+    SCHEMA = """
+        CREATE TABLE note (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            name   TEXT NOT NULL,
+            project/s    TEXT,
+            task/s  TEXT?,
+            contact/s TEXt
+        )
+    """
 
     SEED_DATA = """
         INSERT INTO note (title, pinned, body)

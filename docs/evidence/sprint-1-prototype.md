@@ -120,7 +120,7 @@ I showed these colour pallettes to my end-user, they asked for the colour palett
 
 I showed these colour pallettes to my end-user, they said...
 
-They quiet liked these colours but wanted to make minor changes, they sent back this color pallete, 
+They quiet liked these colours but wanted to make minor changes, they sent back this color palette, 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
 
