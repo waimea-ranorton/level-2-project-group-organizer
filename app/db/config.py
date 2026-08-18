@@ -46,14 +46,10 @@ class PeopleTable:
 #-----------------------------------------------------    
 #people
     SEED_DATA = """
-        INSERT INTO people (title, pinned, body)
+        INSERT INTO people (name, project/s, task/s, contact/s)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
-    """
+            ("steve", English\nMaths\nDrama",  )
+            """
 #-----------------------------------------------------
 class InvolvedTable:
 

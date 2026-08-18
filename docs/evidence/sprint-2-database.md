@@ -27,6 +27,13 @@ I realized while adding test data to the data base that I forgot to add a "conte
 Updated table:
 ![Alt text](screenshots/tables2.png)
 
+## Small update
+
+I realized that having "tasks" table was unnecessary, as who is in charge of what can be conveyed through the projects "notes", my user agreed to this and I updated the tables accordingly.
+
+Updated table:
+![Alt text](screenshots/tables3.png)
+
 ## Testing FEATURE NAME HERE
 
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
