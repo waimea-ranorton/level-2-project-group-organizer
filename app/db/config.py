@@ -2,7 +2,6 @@
 # Database schema and seed data configuration
 #============================================================================
 
-
 #----------------------------------------------------------------------------
 # Table definitions
 #----------------------------------------------------------------------------
@@ -14,20 +13,6 @@
 #     SCHEMA    = "CREATE TABLE name (...)"
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
-
-# class NoteTable:
-
-#     NAME = "note"
-
-#     SCHEMA = """
-#         CREATE TABLE note (
-#             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-#             title   TEXT NOT NULL,
-#             body    TEXT,
-#             pinned  INTEGER DEFAULT 0,
-#             created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-#         )
-#     """
 
 #-----------------------------------------------------
 class PeopleTable:
@@ -46,9 +31,10 @@ class PeopleTable:
 #-----------------------------------------------------    
 #people
     SEED_DATA = """
-        INSERT INTO people (name, project/s, task/s, contact/s)
+        INSERT INTO people (name, contact/s)
         VALUES
-            ("steve", English\nMaths\nDrama",  )
+            ("alex", "614859068\n64735287"),
+            ("steve", "61888888\n64788888"),
             """
 #-----------------------------------------------------
 class InvolvedTable:
@@ -64,13 +50,9 @@ class InvolvedTable:
 #-----------------------------------------------------
 #involved
     SEED_DATA = """
-        INSERT INTO involved (title, pinned, body)
+        INSERT INTO involved ()
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            ()
     """
 #-----------------------------------------------------
 class NotesTable:
@@ -82,19 +64,17 @@ class NotesTable:
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             person_id   INTEGER,
             project_id    INTEGER,
-            time_stamp    TEXT NOT NULL
+            time_stamp    TEXT NOT NULL,
+            content    TEXT NOT NULL
         )
     """
 #-----------------------------------------------------
 #notes
     SEED_DATA = """
-        INSERT INTO notes (title, pinned, body)
+        INSERT INTO notes (content)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            ("Alex your in charge of the word doc.")
+            ("Steve can you add the powerpoint you made?")
     """
 #-----------------------------------------------------
 class FilesTable:
@@ -105,7 +85,6 @@ class FilesTable:
         CREATE TABLE files (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             name   TEXT NOT NULL,
-            type   TEXT NOT NULL,
             link   TEXT?,
             use   TEXT?,
             person_id   INTEGER,
@@ -115,17 +94,14 @@ class FilesTable:
 #-----------------------------------------------------
 #files
     SEED_DATA = """
-        INSERT INTO files (title, pinned, body)
+        INSERT INTO files (name, link, use)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            ("document1", "https://docsz", "Reference sheet from our teacher")
+            ("Template1.5", "https://realtemplatewebsite, "Template for writing notes on studied text")
     """
 #-----------------------------------------------------
 class ProjectsTable:
-
+    
     NAME = "projects"
 
     SCHEMA = """
@@ -139,13 +115,13 @@ class ProjectsTable:
 #-----------------------------------------------------
 #projects
     SEED_DATA = """
-        INSERT INTO projects (id, name, deadline, status)
+        INSERT INTO projects (name, deadline, status)
         VALUES
             ("English", "17/08/2079", "Unfinished")
+            ("Group speech", "10/12/2027", "Finished")
+            ("Enviro presentation", "none", "Unfinished")
     """
 #-----------------------------------------------------
-
-# Add more table classes here...
 
 #----------------------------------------------------------------------------
 # Table registry
@@ -163,7 +139,9 @@ class ProjectsTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    NoteTable,
-    # Add more tables here...
+    PeopleTable,
+    ProjectsTable,
+
+
 ]
 

@@ -30,6 +30,7 @@ Updated table:
 ## Small update
 
 I realized that having "tasks" table was unnecessary, as who is in charge of what can be conveyed through the projects "notes", my user agreed to this and I updated the tables accordingly.
+I showed this to my end-user because I thought the felid "Type" was unessisary (this is something I implemented, not asked by the user) they agreed.
 
 Updated table:
 ![Alt text](screenshots/tables3.png)
