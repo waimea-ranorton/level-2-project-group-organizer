@@ -34,7 +34,7 @@ class PeopleTable:
         INSERT INTO people (name, contact/s)
         VALUES
             ("alex", "614859068\n64735287"),
-            ("steve", "61888888\n64788888"),
+            ("steve", "61888888\nsteveblockman@netmail.com.com"),
             """
 #-----------------------------------------------------
 class InvolvedTable:
@@ -42,17 +42,10 @@ class InvolvedTable:
     NAME = "involved"
 
     SCHEMA = """
-        CREATE TABLE involved (
-            project_id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            person_id      INTEGER PRIMARY KEY AUTOINCREMENT
+        CREATE TABLE involved (        
+            FOREIGN KEY(person_id) REFERENCES People(id)
+            FOREIGN KEY(project_id) REFERENCES Projects(id)
         )
-    """
-#-----------------------------------------------------
-#involved
-    SEED_DATA = """
-        INSERT INTO involved ()
-        VALUES
-            ()
     """
 #-----------------------------------------------------
 class NotesTable:
