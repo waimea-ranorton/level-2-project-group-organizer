@@ -14,6 +14,9 @@
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
 
+#YOU NEED TO FIX AALL OF THE FOREIGN KEYS SO THEN THEY ARE FOREIGN KEYS AND LINKED< FIND INGUIDES UNDER DATA SHCEMA CONFIG
+
+
 #-----------------------------------------------------
 class PeopleTable:
 
