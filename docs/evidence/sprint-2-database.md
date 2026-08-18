@@ -20,6 +20,12 @@ Implement the database, populated with test data. Create queries that retrieve t
     - Retrieve specific ...
     - Etc.
 
+## Small update
+
+I realized while adding test data to the data base that I forgot to add a "content" felid in the table, so the note actually contains a note!
+
+Updated table:
+![Alt text](screenshots/tables2.png)
 
 ## Testing FEATURE NAME HERE
 
