@@ -59,9 +59,11 @@ class NotesTable:
         CREATE TABLE notes (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             person_id   INTEGER,
-            project_id    INTEGER,
             time_stamp    TEXT NOT NULL,
             content    TEXT NOT NULL
+
+            FOREIGN KEY(person_id) REFERENCES People(id)
+            FOREIGN KEY(project_id) REFERENCES Projects(id)
         )
     """
 #-----------------------------------------------------
