@@ -88,23 +88,26 @@ I also decided that projects on the home page should separated into due and fini
 
 I realized that having the home page may be unessisary, and maybe the app should just immediately go to the upcoming projects. I asked my user what they thought of this.
 
-I showed this updated UI template to my user.
+I showed the template above to my end user.
 
 ### Changes / Improvements
+My end user said they liked the splash screen, and the add project page, only asking for minor tweaks.
+We agreed that the home page as it was held little function, instead of removing it my end user decided to repurpose it, now the user can see recent acititiy, and click to acess projects, this side pannel would scroll if needed. My end user also asked if the navigation could be moved to the bottom of the screen, and hover over top of everything else.
+The asked me to add on a settings page, somthing we hadnt previously discussed.
 
-We agreed that...
-So I...
-They liked that...
+### Testing
+After I developed this template with the feedback from my user, showing them often as I worked on it, making minor tweaks based on their opions, leading to this end result.
 
 ![Alt text](screenshots/flow4.png)
 
 *https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-772f6aae5fb0&page-id=81f57451-85cc-819d-8008-772f6aae5fb1&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-7962b28e1c45*
 
+
 ## Refined UI Prototype     
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
-I has a conversation with my user before going into this, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
+I has a conversation with my user before I began this project, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
 So I came up with these colour palletes:
 ![Alt text](screenshots/colorpallete.png)
 ![Alt text](screenshots/colorpallete2.png)
