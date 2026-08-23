@@ -22,7 +22,7 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Etc.
 
 ## Initial Database Design
-![Alt text](screenshots/Tables.png)
+![Tables](screenshots/Tables.png)
 
 ### Required Data Input
 
@@ -54,7 +54,7 @@ Replace this text with a description of how the data will be processed to achiev
 The first stage of prototyping was to explore how the UI might 'flow' between states, based on the required functionality.
 
 This Figma demo shows the initial design for the UI 'flow':
-![UI Flow 1](screenshots/flow1.png)
+![Flow](screenshots/flow1.png)
 
 *https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76dc16543f9c*
 
@@ -65,7 +65,7 @@ I showed this UI flow template to my end-user, they didn't like how it opened ri
 ### Changes / Improvements
 
 I added a splash screen.
-![Alt text](screenshots/flow2.png)
+![Flow](screenshots/flow2.png)
 
 *https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-76dbd5996cf3&page-id=81f57451-85cc-819d-8008-76dbd5996cf4&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-76ea4f9686b4*
 
@@ -80,7 +80,7 @@ When I was making my layouts for each screen, I resized that having only one pag
 
 I also decided that projects on the home page should separated into due and finished projects, so its easier for users to find things, and that due projects should be displayed in order of when its due.
 
-![Alt text](screenshots/flow3.png)
+![Flow](screenshots/flow3.png)
 
 *https://design.penpot.app/#/view?file-id=3be9e5e1-190f-8090-8008-6de71b4fba1b&page-id=3be9e5e1-190f-8090-8008-6de71b4fba1c&section=interactions&index=0&share-id=81f57451-85cc-819d-8008-76ef30d55776*
 
@@ -98,7 +98,7 @@ The asked me to add on a settings page, somthing we hadnt previously discussed.
 ### Testing
 After I developed this template with the feedback from my user, showing them often as I worked on it, making minor tweaks based on their opions, leading to this end result.
 
-![Alt text](screenshots/flow4.png)
+![Flow](screenshots/flow4.png)
 
 *https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-772f6aae5fb0&page-id=81f57451-85cc-819d-8008-772f6aae5fb1&section=interactions&index=0&share-id=3be9e5e1-190f-8090-8008-7962b28e1c45*
 
@@ -109,23 +109,22 @@ Having established the layout of the UI screens, the prototype was refined visua
 
 I has a conversation with my user before I began this project, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
 So I came up with these colour palletes:
-![Alt text](screenshots/colorpallete.png)
-![Alt text](screenshots/colorpallete2.png)
-![Alt text](screenshots/colorpallete3.png)
+![Colour pallete](screenshots/colorpallete.png)
+![Colour pallete](screenshots/colorpallete2.png)
+![Colour pallete](screenshots/colorpallete3.png)
 
 I showed these colour pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
 
-![Alt text](screenshots/colorpallete4.png)
-![Alt text](screenshots/colorpallete5.png)
-![Alt text](screenshots/colorpallete6.png)
-![Alt text](screenshots/colorpallete7.png)
-![Alt text](screenshots/colourpallete8.png)
+![Colour pallete](screenshots/colorpallete4.png)
+![Colour pallete](screenshots/colorpallete5.png)
+![Colour pallete](screenshots/colorpallete6.png)
+![Colour pallete](screenshots/colorpallete7.png)
+![Colour pallete](screenshots/colourpallete8.png)
 
 I showed these colour pallettes to my end-user, they said...
 
-They quiet liked these colours but wanted to make minor changes, they sent back this color palette, 
-![Alt text](image.png)
-![Alt text](image-1.png)
+They quiet liked these colours but wanted to make minor changes, they sent back this color palette they produced. 
+![Colour pallete](screenshots/colourpallete9.png)
 
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
@@ -139,8 +138,7 @@ Replace this text with notes any improvements you made as a result of the testin
 
 *FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
-
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+I think that I could have benifited in time if I had shown my user the templates more freqwently during development and asked further qeastions, as to prevent extreme changes that ended up happening.
 
