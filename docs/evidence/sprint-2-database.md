@@ -35,10 +35,10 @@ I showed this to my end-user because I thought the felid "Type" was unessisary (
 Updated table:
 ![Alt text](screenshots/tables3.png)
 
-## Testing FEATURE NAME HERE
-
+## Testing Database
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
+![Alt text](screenshots/Database1.png)
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
 ![Placeholder](screenshots/placeholder.png)
