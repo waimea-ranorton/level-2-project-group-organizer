@@ -14,9 +14,6 @@
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
 
-#YOU NEED TO FIX AALL OF THE FOREIGN KEYS SO THEN THEY ARE FOREIGN KEYS AND LINKED< FIND INGUIDES UNDER DATA SHCEMA CONFIG
-
-
 #-----------------------------------------------------
 class PeopleTable:
 
@@ -27,76 +24,15 @@ class PeopleTable:
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             name   TEXT NOT NULL,
             project/s    TEXT NOT NULL,
-            task/s  TEXT?,
             contact/s TEXT?
         )
     """
-#-----------------------------------------------------    
-#people
     SEED_DATA = """
-        INSERT INTO people (name, contact/s)
+        INSERT INTO people (id, name, project/s, contact/s)
         VALUES
-            ("alex", "614859068\n64735287"),
-            ("steve", "61888888\nsteveblockman@netmail.com.com"),
+            ("1", "alex", "1\n2\n4", "614859068\n64735287"),
+            ("3", "steve", "1\n2\n6","61888888\nsteveblockman@netmail.com"),
             """
-#-----------------------------------------------------
-class InvolvedTable:
-
-    NAME = "involved"
-
-    SCHEMA = """
-        CREATE TABLE involved (        
-            FOREIGN KEY(person_id) REFERENCES People(id)
-            FOREIGN KEY(project_id) REFERENCES Projects(id)
-        )
-    """
-#-----------------------------------------------------
-class NotesTable:
-
-    NAME = "notes"
-
-    SCHEMA = """
-        CREATE TABLE notes (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            person_id   INTEGER,
-            time_stamp    TEXT NOT NULL,
-            content    TEXT NOT NULL
-
-            FOREIGN KEY(person_id) REFERENCES People(id)
-            FOREIGN KEY(project_id) REFERENCES Projects(id)
-        )
-    """
-#-----------------------------------------------------
-#notes
-    SEED_DATA = """
-        INSERT INTO notes (content)
-        VALUES
-            ("Alex your in charge of the word doc.")
-            ("Steve can you add the powerpoint you made?")
-    """
-#-----------------------------------------------------
-class FilesTable:
-
-    NAME = "files"
-
-    SCHEMA = """
-        CREATE TABLE files (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            name   TEXT NOT NULL,
-            link   TEXT?,
-            use   TEXT?,
-            person_id   INTEGER,
-            project_id   INTEGER
-        )
-    """    
-#-----------------------------------------------------
-#files
-    SEED_DATA = """
-        INSERT INTO files (name, link, use)
-        VALUES
-            ("document1", "https://docsz", "Reference sheet from our teacher")
-            ("Template1.5", "https://realtemplatewebsite, "Template for writing notes on studied text")
-    """
 #-----------------------------------------------------
 class ProjectsTable:
     
@@ -110,14 +46,76 @@ class ProjectsTable:
             status   TEXT NOT NULL
         )
     """    
-#-----------------------------------------------------
-#projects
+
     SEED_DATA = """
-        INSERT INTO projects (name, deadline, status)
+        INSERT INTO projects (id, name, deadline, status)
         VALUES
-            ("English", "17/08/2079", "Unfinished")
-            ("Group speech", "10/12/2027", "Finished")
-            ("Enviro presentation", "none", "Unfinished")
+            ("1", "English", "17/08/2079", "Unfinished")
+            ("2", "Group speech", "10/12/2027", "Finished")
+            ("3", "Enviro presentation", "none", "Unfinished")
+    """
+#-----------------------------------------------------
+class InvolvedTable:
+
+    NAME = "involved"
+
+    SCHEMA = """
+        CREATE TABLE involved (        
+            FOREIGN KEY(person_id) REFERENCES people(id),
+            FOREIGN KEY(project_id) REFERENCES projects(id)
+        )
+    """
+
+    SEED_DATA = """
+        INSERT INTO involved (person_id, project_id)
+        VALUES
+            (1, 1)
+            (1, 2)
+            (2, 1)
+    """
+#-----------------------------------------------------
+class NotesTable:
+
+    NAME = "notes"
+
+    SCHEMA = """
+        CREATE TABLE notes (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            time_stamp    TEXT DEFAULT CURRENT_TIMESTAMP,
+            content    TEXT NOT NULL,
+            FOREIGN KEY(person_id) REFERENCES People(id),
+            FOREIGN KEY(project_id) REFERENCES Projects(id)
+        )
+    """
+
+    SEED_DATA = """
+        INSERT INTO notes (id, time_stamp, content, person_id, project_id)
+        VALUES
+            ("1", "12:00", "Alex your in charge of the word doc.", 1, 2)
+            ("2", "01:00", "Steve can you add the powerpoint you made?", 1, 1)
+    """
+#-----------------------------------------------------
+class FilesTable:
+
+    NAME = "files"
+
+    SCHEMA = """
+        CREATE TABLE files (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            name   TEXT NOT NULL,
+            link   TEXT?,
+            use   TEXT?,
+            FOREIGN KEY(person_id) REFERENCES People(id),
+            FOREIGN KEY(project_id) REFERENCES Projects(id)
+        )
+    """    
+#-----------------------------------------------------
+#files
+    SEED_DATA = """
+        INSERT INTO files (id, name, link, use, person_id, project_id)
+        VALUES
+            ("1", "document1", "https://docsz", "Reference sheet from our teacher", "2", "3"),
+            ("2", "Template1.5", "https://realtemplatewebsite, "Template for writing notes on studied text", "1", "2")
     """
 #-----------------------------------------------------
 
