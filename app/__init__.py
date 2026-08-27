@@ -28,7 +28,7 @@ def show_notes():
     with connect_db() as db:
         sql = """
             SELECT id, title, body, pinned, created
-            FROM note
+            FROM notes
             ORDER BY pinned DESC, created DESC
         """
         params = ()
