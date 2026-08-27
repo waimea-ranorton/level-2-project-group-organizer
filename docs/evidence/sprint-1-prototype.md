@@ -107,6 +107,8 @@ After I developed this template with the feedback from my user, showing them oft
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
+##Colour 
+
 I has a conversation with my user before I began this project, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
 So I came up with these colour palletes:
 ![Colour pallete](screenshots/colorpallete.png)
@@ -128,15 +130,9 @@ They quiet liked these colours but wanted to make minor changes, they sent back 
 
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
-### Testing
+## Fonts
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-*FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+My user said the website should be primarily in Garamond and maybe times new roman.
 
 ## Sprint Review
 
