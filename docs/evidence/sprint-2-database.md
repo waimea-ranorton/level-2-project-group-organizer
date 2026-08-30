@@ -41,10 +41,10 @@ Updated table:
 ![Alt text](screenshots/tables3.png)
 
 ## Testing Database
-### Changes / Improvements
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
+I set up the tables
 ![Alt text](screenshots/Database1.png)
+
+Then inserted test data to see how they worked.
 ![Alt text](<screenshots/Database 2.png>)
 
 ## Sprint Review
