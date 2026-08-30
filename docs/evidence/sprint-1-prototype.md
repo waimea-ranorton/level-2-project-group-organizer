@@ -132,7 +132,6 @@ My end user asked for the app/website to use Garamond or Times New Roman, or bot
 
 ### Shapes
 My end user asked for the website to be rounded, litterally, here are some examples they sent and xhfdhgvfduilfhfsd....
-
 ## Sprint Review
 
 I think that I could have benifited in time if I had shown my user the templates more freqwently during development and asked further qeastions, as to prevent extreme changes that ended up happening.

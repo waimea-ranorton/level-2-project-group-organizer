@@ -10,20 +10,20 @@ Implement the database, populated with test data. Create queries that retrieve t
 I must
 Implement the database, Add test data to the database, Make page universal nav,
 Create the following web pages:
-    - Splash screen showing placeholder logo.
-    - Home screen showing new activity, projects.
-    - Project calendar showing upcoming projects.
-    - Project calendar showing finished projects.
-    - Project calendar showing past-due projects.
-    - Add project page showing form.
-    - Settings page with options.
+- Splash screen showing placeholder logo.
+- Home screen showing new activity, projects.
+- Project calendar showing upcoming projects.
+- Project calendar showing finished projects.
+- Project calendar showing past-due projects.
+- Add project page showing form.
+- Settings page with options.
 
 Develop SQL database queries to:
-    - Retrieve all upcoming projects
-    - Retrieve all finished projects
-    - Retrieve all past-due projects
-    - Retrieve all new activity
-    - Retrieve all project information
+- Retrieve all upcoming projects
+- Retrieve all finished projects
+- Retrieve all past-due projects
+- Retrieve all new activity
+- Retrieve all project information
 
 ## Small update
 
