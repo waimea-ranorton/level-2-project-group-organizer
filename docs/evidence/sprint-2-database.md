@@ -12,6 +12,7 @@ Implement the database, Add test data to the database, Make page universal nav,
 Create the following web pages:
 - Splash screen showing placeholder logo.
 - Home screen showing new activity, projects.
+- Expanded project with details.
 - Project calendar showing upcoming projects.
 - Project calendar showing finished projects.
 - Project calendar showing past-due projects.
@@ -46,6 +47,9 @@ I set up the tables
 
 Then inserted test data to see how they worked.
 ![Alt text](<screenshots/Database 2.png>)
+
+## Creating pages
+![Alt text](screenshots/files.png)
 
 ## Sprint Review
 
