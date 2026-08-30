@@ -8,10 +8,8 @@ Implement the database, populated with test data. Create queries that retrieve t
 ### Specific Goals
 
 I must
-- Implement the database
-- Add test data to the database
-- Make page universal nav
-- Create the following web pages:
+Implement the database, Add test data to the database, Make page universal nav,
+Create the following web pages:
     - Splash screen showing placeholder logo.
     - Home screen showing new activity, projects.
     - Project calendar showing upcoming projects.
@@ -20,7 +18,7 @@ I must
     - Add project page showing form.
     - Settings page with options.
 
-- Develop SQL database queries to:
+Develop SQL database queries to:
     - Retrieve all upcoming projects
     - Retrieve all finished projects
     - Retrieve all past-due projects
@@ -47,10 +45,6 @@ Updated table:
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
 ![Alt text](screenshots/Database1.png)
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-![Placeholder](screenshots/placeholder.png)
-
 
 ## Sprint Review
 
