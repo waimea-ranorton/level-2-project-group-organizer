@@ -107,13 +107,15 @@ After I developed this template with the feedback from my user, showing them oft
 
 Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
 
+### Colours
 I has a conversation with my user before I began this project, where asked specifically for a dull, "peaceful", purple, colour palette, that uses black and white for details.
 So I came up with these colour palletes:
 ![Colour pallete](screenshots/colorpallete.png)
 ![Colour pallete](screenshots/colorpallete2.png)
 ![Colour pallete](screenshots/colorpallete3.png)
 
-I showed these colour pallettes to my end-user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one.
+### Testing
+After shpowing those palletes to my end user, they asked for the colour palette to be monochromatic, and said they liked the more destaturated one. So I produced these.
 
 ![Colour pallete](screenshots/colorpallete4.png)
 ![Colour pallete](screenshots/colorpallete5.png)
@@ -121,23 +123,15 @@ I showed these colour pallettes to my end-user, they asked for the colour palett
 ![Colour pallete](screenshots/colorpallete7.png)
 ![Colour pallete](screenshots/colourpallete8.png)
 
-I showed these colour pallettes to my end-user, they said...
-
-They quiet liked these colours but wanted to make minor changes, they sent back this color palette they produced. 
+### Testing
+My end user said, They quiet liked those colours but wanted to make minor changes, after some discussion, they sent back this color palette they produced.
 ![Colour pallete](screenshots/colourpallete9.png)
 
-*FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+### Fonts
+My end user asked for the app/website to use Garamond or Times New Roman, or both, depending on what I thought would work best.
 
-### Testing
-
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-*FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
+### Shapes
+My end user asked for the website to be rounded, litterally, here are some examples they sent and xhfdhgvfduilfhfsd....
 ## Sprint Review
 
 I think that I could have benifited in time if I had shown my user the templates more freqwently during development and asked further qeastions, as to prevent extreme changes that ended up happening.
