@@ -45,6 +45,7 @@ Updated table:
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
 ![Alt text](screenshots/Database1.png)
+![Alt text](<screenshots/Database 2.png>)
 
 ## Sprint Review
 
