@@ -7,7 +7,7 @@ Implement the database, populated with test data. Create queries that retrieve t
 
 ### Specific Goals
 
-
+I must
 - Implement the database
 - Add test data to the database
 - Make page universal nav
