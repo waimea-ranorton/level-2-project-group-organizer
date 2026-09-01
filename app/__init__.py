@@ -46,25 +46,26 @@ def show_tasks():
 #===========================================================
 @app.post("/project/new")
 def process_project_form():
-    #get form data
-    name = request.form.get("name", "unknown").strip() #default value if no species
-    priority = request.form.get("priority", "unknown").strip()
-
-    #connect to the DB
     with connect_db() as db:
-        sql = """
-            INSERT INTO projects (priority, name)
-            VALUES (?, ?)
-        """
-        params = (name, priority)
+        #get form data
+        name = request.form.get("name", "unknown").strip() #default value if no species
+        priority = request.form.get("priority", "unknown").strip()
 
-        #run query
-        db.execute(sql, params)
+        #connect to the DB
+        with connect_db() as db:
+            sql = """
+                INSERT INTO projects (priority, name)
+                VALUES (?, ?)
+            """
+            params = (name, priority)
 
-        flash(f"project {name} added successfully")
+            #run query
+            db.execute(sql, params)
 
-        #done, return to list
-        return redirect("/")
+            flash(f"project {name} added successfully")
+
+            #done, return to list
+            return redirect("/")
 
 
 #===========================================================
