@@ -49,7 +49,7 @@ Then inserted test data to see how they worked.
 ![Alt text](<screenshots/Database 2.png>)
 
 ## Creating pages
-![Alt text](screenshots/files.png)
+
 
 ## Sprint Review
 
