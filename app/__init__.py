@@ -24,12 +24,12 @@ app = Flask(__name__)
 # Home page - Show all notes
 #-----------------------------------------------------------
 @app.get("/")
-def show_notes():
+def show_tasks():
     with connect_db() as db:
         sql = """
-            SELECT id, title, body, pinned, created
-            FROM notes
-            ORDER BY pinned DESC, created DESC
+            SELECT id, name, deadline, status
+            FROM projects
+            ORDER BY name DESC
         """
         params = ()
         notes = db.execute(sql, params).fetchall()
@@ -41,6 +41,30 @@ def show_notes():
         flash("Test ERROR message", "error")
 
         return render_template("pages/note_list.jinja", notes=notes)
+
+
+#===========================================================
+@app.post("/project/new")
+def process_project_form():
+    #get form data
+    name = request.form.get("name", "unknown").strip() #default value if no species
+    priority = request.form.get("priority", "unknown").strip()
+
+    #connect to the DB
+    with connect_db() as db:
+        sql = """
+            INSERT INTO projects (priority, name)
+            VALUES (?, ?)
+        """
+        params = (name, priority)
+
+        #run query
+        db.execute(sql, params)
+
+        flash(f"project {name} added successfully")
+
+        #done, return to list
+        return redirect("/")
 
 
 #===========================================================
