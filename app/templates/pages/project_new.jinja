@@ -3,7 +3,27 @@
 
 {% block content %}
 
-    <h1 class="welcome">Hi!</h1>
+    <h2>New task</h2>
+
+    <form method="post" action="/task/new">
+        <label>
+
+            Name
+            <input type="text" name="name" required>
+
+        </label>
+
+        <label>
+        
+            Priority
+            <input type="text" name="priority" required>
+
+        </label>
+
+
+        <button>Add Task</button>
+    
+    </form>
 
 {% endblock %}
 

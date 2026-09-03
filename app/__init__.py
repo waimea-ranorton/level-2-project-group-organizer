@@ -44,6 +44,16 @@ def show_tasks():
 
 
 #===========================================================
+@app.get("/project")
+def show_project():
+    return render_template("pages/project.jinja")
+
+#===========================================================
+@app.get("/project/new")
+def show_project_form():
+    return render_template("pages/project_new.jinja")
+
+#===========================================================
 @app.post("/project/new")
 def process_project_form():
     with connect_db() as db:
@@ -67,8 +77,15 @@ def process_project_form():
             #done, return to list
             return redirect("/")
 
-
 #===========================================================
+@app.get("/calendar")
+def show_calendar():
+    return render_template("pages/calendar.jinja")
+#===========================================================    
+@app.get("/settings")
+def show_settings():
+    return render_template("pages/settings.jinja")
+#===========================================================    
 # Configure the app
 #===========================================================
 load_dotenv()
