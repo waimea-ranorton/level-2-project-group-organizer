@@ -70,8 +70,8 @@ def process_project_form():
             params = (name, priority)
 
             #run query
-            db.execute(sql, params)
-
+            db.execute(sql, params) ####################################################################################################
+#The the run the like the form the form insert and the error happen and eguwiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiivbj
             flash(f"project {name} added successfully")
 
             #done, return to list
