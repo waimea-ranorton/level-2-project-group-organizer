@@ -26,13 +26,6 @@
         <a href="/">
            Project organizer
         </a>
-
-        <nav>
-            <a href="/">Home</a>
-            <a href="/project/new">New Project</a>
-            <a href="/calendar">calendar</a>
-            <a href="/settings">Settings</a>
-        </nav>
     </header>
 
     {# Show flash messages from any previous events #}
@@ -44,6 +37,15 @@
         {% endblock %}
 
     </main>
+
+    <footer>
+        <nav>
+            <div class="Home"> <a href="/">Home</a> </div>
+            <div class="New"> <a href="/project/new">New Project</a> </div>
+            <div class="Cala"> <a href="/calendar">calendar</a> </div>
+            <div class="Set"> <a href="/settings">Settings</a> </div>
+        </nav>  
+    </footer>
 
 </body>
 

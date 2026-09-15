@@ -3,15 +3,15 @@
 ===========================================================*/
 
 :root {
-    --flash-message-text-col:     #111;
-    --flash-message-bg-col:       #fff;
-    --flash-message-border-col:   #888;
+    --flash-message-text-col:     #201E45;
+    --flash-message-bg-col:       #9D90AA;
+    --flash-message-border-col:   #ffffff;
     --flash-message-accent-col:   #ccc;
-    --flash-message-shadow-col:   #0004;
+    --flash-message-shadow-col:   rgba(0, 0, 0, 0.267);
 
-    --flash-error-col:            #c00;
-    --flash-warning-col:          #c80;
-    --flash-success-col:          #0c0;
+    --flash-error-col:            #f72e2e;
+    --flash-warning-col:          rgb(236, 106, 19);
+    --flash-success-col:          rgb(50, 243, 50);
 }
 
 
@@ -19,8 +19,8 @@
 
 #flash-messages {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    top: 0.5 rem;
+    right: 0.5rem;
 
     .flash-message {
         width: 15rem;
@@ -31,10 +31,11 @@
 
         color: var(--flash-message-text-col);
         background-color: color-mix(in srgb, var(--flash-message-bg-col), var(--flash-message-accent-col) 20%);
-        border: 1px solid var(--flash-message-border-col);
+        border: 2px solid var(--flash-message-border-col);
         box-shadow: 0 0.1rem 0.5rem var(--flash-message-shadow-col);
         border-radius: 0.5rem;
         cursor: pointer;
+        font-weight: bold;
 
         transform: translateX(120%);
         opacity: 0;
