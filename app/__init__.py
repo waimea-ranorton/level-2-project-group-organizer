@@ -23,7 +23,12 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Home page - Show all notes
 #-----------------------------------------------------------
+#===========================================================
 @app.get("/")
+def show_project():
+    return render_template("pages/home.jinja")
+#===========================================================
+@app.get("/projects")
 def show_tasks():
     with connect_db() as db:
         sql = """
@@ -41,13 +46,6 @@ def show_tasks():
         flash("Test ERROR message", "error")
 
         return render_template("pages/note_list.jinja", notes=notes)
-
-
-#===========================================================
-@app.get("/project")
-def show_project():
-    return render_template("pages/project.jinja")
-
 #===========================================================
 @app.get("/project/new")
 def show_project_form():

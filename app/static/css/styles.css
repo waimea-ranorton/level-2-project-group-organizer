@@ -95,6 +95,11 @@ nav {
             background-color: var(--back-col);
         }
 
+        .Pro {
+            padding: 0.5rem;
+            background-color: var(--back-col);    
+        }
+
         .New {
             padding: 0.5rem;
             background-color: var(--back-col);    
