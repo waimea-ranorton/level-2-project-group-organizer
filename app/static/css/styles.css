@@ -52,8 +52,8 @@ body > header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-
-    }
+    background-color: var(--back-col-panel);
+}
 
 /* Page Headings -----------------------------------------------*/
 
@@ -73,7 +73,6 @@ main > h2 {
 
     .note {
         padding: 1rem;
-        box-shadow: 0 0.5rem 1rem #0004;
         border: 1px solid var(--border-col);
         background-color: var(--back-col-panel);
 

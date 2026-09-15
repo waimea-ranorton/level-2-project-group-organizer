@@ -62,7 +62,7 @@ def process_project_form():
         #connect to the DB
         with connect_db() as db:
             sql = """
-                INSERT INTO projects (priority, name)
+                INSERT INTO projects (name, priority)
                 VALUES (?, ?)
             """
             params = (name, priority)
