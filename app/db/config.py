@@ -23,16 +23,15 @@ class ProjectsTable:
             name   TEXT NOT NULL,
             deadline   TEXT,
             status   TEXT NOT NULL DEFAULT "Unfinished",
-            priority TEXT NOT NULL
         )
     """    
 
     SEED_DATA = """
-        INSERT INTO projects (name, deadline, status, priority)
+        INSERT INTO projects (name, deadline, status)
         VALUES
-            ("English", "2079-08-17", "Unfinished", "1"),
-            ("Group speech", "2027-12-20", "Finished", "2"),
-            ("Enviro presentation", "none", "Unfinished", "3")
+            ("English", "2079-08-17", "Unfinished"),
+            ("Group speech", "2027-12-20", "Finished"),
+            ("Enviro presentation", "none", "Unfinished")
     """
 #-----------------------------------------------------
 class PeopleTable:

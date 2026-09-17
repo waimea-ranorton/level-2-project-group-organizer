@@ -57,20 +57,20 @@ def process_project_form():
     with connect_db() as db:
         #get form data
         name = request.form.get("name", "unknown").strip() #default value if no species
-        priority = request.form.get("priority", "unknown").strip()
+        deadline = request.form.get("deadline", "unknown").strip()
 
         #connect to the DB
         with connect_db() as db:
             sql = """
-                INSERT INTO projects (name, priority)
+                INSERT INTO projects (name, deadline)
                 VALUES (?, ?)
             """
-            params = (name, priority)
+            params = (name, deadline)
 
             #run query
             db.execute(sql, params) ####################################################################################################
 #The the run the like the form the form insert and the error happen and eguwiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiivbj
-            flash(f"project {name} added successfully")
+            flash(f"Project {name} added successfully")
 
             #done, return to list
             return redirect("/")
@@ -79,7 +79,11 @@ def process_project_form():
 @app.get("/calendar")
 def show_calendar():
     return render_template("pages/calendar.jinja")
-#===========================================================    
+#===========================================================  
+@app.get("/calendar/finished")
+def show_calendar_finished():
+    return render_template("pages/calendarfinished.jinja")
+#===========================================================      
 @app.get("/settings")
 def show_settings():
     return render_template("pages/settings.jinja")

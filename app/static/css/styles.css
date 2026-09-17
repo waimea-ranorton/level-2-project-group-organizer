@@ -83,12 +83,14 @@ main > h2 {
         }
     }
 }
-nav {
+footer > nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 1rem;
     position: fixed;
     bottom: 0;
+
         .Home {
             padding: 0.5rem;
             background-color: var(--back-col);
@@ -113,7 +115,19 @@ nav {
             padding: 0.5rem;
             background-color: var(--back-col);    
         }
+
 }
+
+main > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        gap: 1rem;
+        .Upcoming {
+            padding-top: 0rem;
+        }
+}
+
         &.pinned {
             border-color: var(--accent-col);
         } 
