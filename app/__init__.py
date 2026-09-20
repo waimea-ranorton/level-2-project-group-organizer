@@ -46,6 +46,24 @@ def show_tasks():
         flash("Test ERROR message", "error")
 
         return render_template("pages/note_list.jinja", notes=notes)
+#-----------------------------------------------------------
+@app.get("/project/<int:id>/delete")
+def delete_a_projects(id):
+    with connect_db() as db:
+        ##delete project using its id
+        sql = """
+            DELETE FROM projects
+            WHERE id=?
+        """
+        params = (id,)
+        db.execute(sql, params)  
+
+
+        flash("project deleted", "success")
+##back to list
+        return redirect("/calendar")
+
+#-----------------------------------------------------------        
 #===========================================================
 @app.get("/project/new")
 def show_project_form():
@@ -68,8 +86,8 @@ def process_project_form():
             params = (name, deadline)
 
             #run query
-            db.execute(sql, params) ####################################################################################################
-#The the run the like the form the form insert and the error happen and eguwiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiivbj
+            db.execute(sql, params) 
+
             flash(f"Project {name} added successfully")
 
             #done, return to list
@@ -82,7 +100,11 @@ def show_calendar():
 #===========================================================  
 @app.get("/calendar/finished")
 def show_calendar_finished():
-    return render_template("pages/calendarfinished.jinja")
+    return render_template("pages/calendar_finished.jinja")
+#===========================================================   
+@app.get("/calendar/pastdue")
+def show_calendar_pastdue():
+    return render_template("pages/calendar_pastdue.jinja")
 #===========================================================      
 @app.get("/settings")
 def show_settings():

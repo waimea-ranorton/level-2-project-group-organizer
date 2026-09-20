@@ -58,9 +58,10 @@ body > header {
 /* Page Headings -----------------------------------------------*/
 
 main > h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin-block: 2rem;
+    margin-block: 0.5rem;
+    text-decoration: underline;
 }
 
 /* Notes --------------------------------------------------*/
@@ -132,3 +133,8 @@ main > nav {
             border-color: var(--accent-col);
         } 
 
+p {
+    font-size: 1rem;
+    text-align: center;
+    margin-block: 0.5rem;
+}

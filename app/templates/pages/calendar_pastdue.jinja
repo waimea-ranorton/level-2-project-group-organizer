@@ -1,28 +1,26 @@
 {% extends 'pages/_base.jinja' %}
 
-
 {% block content %}
 
     <nav>
         <div class="Upcoming"> <a href="/calendar">Upcoming</a> </div>
         <div class="Finished"> <a href="/calendar/finished">Finished</a> </div>
+        <div class="Past due"> <a href="/calendar/pastdue">Pastdue</a> </div>
     </nav> 
 
-    <h2>Upcoming Projects</h2>
+    <h2>Past due Projects</h2>
 
     <section id="projects">
 
         {% for project in projects %}
 
             <div class="projects">
-                <h3>{{ project.name }}</h3>
-                <p>Deadline <strong>{{ project.deadline }}</strong></p>
+                <p> <strong>{{ project.name }}</strong> </p>
+                <a href="/project/{{ task.id }}/delete">delete</a>
             </div>
 
         {% else %}
-
             <p>No Projects!</p>
-
         {% endfor %}    
 
     </section>
