@@ -8,20 +8,25 @@
         <div class="Past due"> <a href="/calendar/pastdue">Pastdue</a> </div>
     </nav> 
 
-    <h2>Past due Projects</h2>
+    <h2>Past due Projects</h2> 
 
-    <section id="projects">
+        <section id="projects">
 
         {% for project in projects %}
 
-            <div class="projects">
-                <p> <strong>{{ project.name }}</strong> </p>
-                <a href="/project/{{ task.id }}/delete">delete</a>
+            <div class="tasks">
+                <h4>{{ project.name }} - {{ project.deadline }}</h4>
+            
+            {% if project %}
+                    <p><a href="/project/{{ project.id }}/delete">delete</a></p>
+            {% endif %}
             </div>
 
         {% else %}
-            <p>No Projects!</p>
-        {% endfor %}    
+
+            <p>No projects!</p>
+
+        {% endfor %}             
 
     </section>
 

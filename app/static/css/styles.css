@@ -84,13 +84,17 @@ main > h2 {
         }
     }
 }
+
+footer {
+    /*MAKE SIT BOTTOM*/
+}
+
 footer > nav {
+    width: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
-    position: fixed;
-    bottom: 0;
 
         .Home {
             padding: 0.5rem;

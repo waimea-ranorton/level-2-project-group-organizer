@@ -7,30 +7,27 @@
 
 {% block content %}
 
-    <h2>Notes</h2>
+    <h2>Projects</h2>
 
-    <section id="notes">
+    <section id="">
 
-        {% for note in notes %}
+        {% for project in projects %}
 
-            <div class="note {{ 'pinned' if note.pinned }}">
+            <div class="project {{ 'pinned' if project.pinned }}">
 
                 <header>
-                    <h3>{{ note.title }}</h3>
-                    {{ "📌" if note.pinned }}
+                    <h3>{{ project_name }}</h3>
+                    {{ "📌" if project.pinned }}
                 </header>
 
-                <p>{{ note.body | paragraphs }}</p>
+                <p>{{ project.body | paragraphs }}</p>
 
-                <footer>
-                    Created on {{ note.created | local | format }}
-                </footer>
 
             </div>
 
         {% else %}
 
-            <p>No Notes!</p>
+            <p>No Projects!</p>
 
         {% endfor %}
 
