@@ -3,20 +3,21 @@
 
 {% block content %}
 
-    <nav>
+    <nav id="Cal">
         <div class="Upcoming"> <a href="/calendar">Upcoming</a> </div>
         <div class="Finished"> <a href="/calendar/finished">Finished</a> </div>
         <div class="Past due"> <a href="/calendar/pastdue">Pastdue</a> </div>
     </nav> 
 
-    <h2>Finished Projects</h2>
+    <h2>Past due Projects</h2> 
 
-    <section id="projects">
+        <section id="projects">
 
         {% for project in projects %}
 
             <div class="tasks">
-                <h4>{{ project.name }} - {{ project.deadline }}</h4>
+                <h2>{{ projects.name }} </h2>
+                <h2>{{ projects.deadline }}</h2>
             
             {% if project %}
                     <p><a href="/project/{{ project.id }}/delete">delete</a></p>
@@ -27,7 +28,7 @@
 
             <p>No projects!</p>
 
-        {% endfor %}     
+        {% endfor %}             
 
     </section>
 

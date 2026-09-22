@@ -96,7 +96,15 @@ def process_project_form():
 #===========================================================
 @app.get("/calendar")
 def show_calendar():
-    return render_template("pages/calendar.jinja")
+    with connect_db() as db:
+        sql = """
+            SELECT name, deadline
+            FROM projects
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/calendar.jinja", projects=projects)
 #===========================================================  
 @app.get("/calendar/finished")
 def show_calendar_finished():
