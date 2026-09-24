@@ -108,15 +108,31 @@ def show_calendar():
 #===========================================================  
 @app.get("/calendar/finished")
 def show_calendar_finished():
-    return render_template("pages/calendar_finished.jinja")
+    with connect_db() as db:
+        sql = """
+            SELECT name, deadline
+            FROM projects
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/calendar_finished.jinja", projects=projects)
 #===========================================================   
-@app.get("/calendar/pastdue")
-def show_calendar_pastdue():
-    return render_template("pages/calendar_pastdue.jinja")
+@app.get("/calendar/past_due")
+def show_calendar_past_due():
+    with connect_db() as db:
+        sql = """
+            SELECT name, deadline
+            FROM projects
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/calendar_past_due.jinja", projects=projects)
 #===========================================================      
 @app.get("/settings")
 def show_settings():
-    return render_template("pages/settings.jinja")
+    return render_template("pages/settings.jinja", projects=projects)
 #===========================================================    
 # Configure the app
 #===========================================================
