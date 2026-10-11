@@ -48,7 +48,7 @@ def show_tasks():
         return render_template("pages/note_list.jinja", notes=notes)
 #-----------------------------------------------------------
 @app.get("/project/<int:id>/delete")
-def delete_a_projects(id):
+def delete_a_project(id):
     with connect_db() as db:
         ##delete project using its id
         sql = """
@@ -58,10 +58,9 @@ def delete_a_projects(id):
         params = (id,)
         db.execute(sql, params)  
 
-
-        flash("project deleted", "success")
+        flash("Project deleted", "success")
 ##back to list
-        return redirect("/calendar")
+        return redirect("/calendar")        
 
 #-----------------------------------------------------------        
 #===========================================================
@@ -100,6 +99,7 @@ def show_calendar():
         sql = """
             SELECT name, deadline
             FROM projects
+            WHERE status = 'Unfinished'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
@@ -112,18 +112,20 @@ def show_calendar_finished():
         sql = """
             SELECT name, deadline
             FROM projects
+            WHERE status = 'Finished'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
 
         return render_template("pages/calendar_finished.jinja", projects=projects)
 #===========================================================   
-@app.get("/calendar/past_due")
+@app.get("/calendar/pastdue")
 def show_calendar_past_due():
     with connect_db() as db:
         sql = """
             SELECT name, deadline
             FROM projects
+            WHERE status = 'Past due'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
@@ -132,10 +134,10 @@ def show_calendar_past_due():
 #===========================================================      
 @app.get("/settings")
 def show_settings():
-    return render_template("pages/settings.jinja", projects=projects)
+    return render_template("pages/settings.jinja")
 #===========================================================    
+
 # Configure the app
-#===========================================================
 load_dotenv()
 app.config.from_prefixed_env()
 init_logging(app)
