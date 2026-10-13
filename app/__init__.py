@@ -26,10 +26,19 @@ app = Flask(__name__)
 #===========================================================
 @app.get("/")
 def show_project():
-    return render_template("pages/home.jinja")
+    with connect_db() as db:
+        sql = """
+                SELECT id, name, deadline, status
+                FROM projects
+                ORDER BY name DESC
+        """
+        params = ()
+        tasks = db.execute(sql, params).fetchall()
+
+        return render_template("pages/home.jinja")
 #===========================================================
 @app.get("/projects")
-def show_tasks():
+def show_projects():
     with connect_db() as db:
         sql = """
             SELECT id, name, deadline, status
@@ -45,38 +54,48 @@ def show_tasks():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        return render_template("pages/note_list.jinja", notes=notes)
-#-----------------------------------------------------------
-@app.get("/project/<int:id>/delete")
-def delete_a_project(id):
-    with connect_db() as db:
-        ##delete project using its id
-        sql = """
-            DELETE FROM projects
-            WHERE id=?
-        """
-        params = (id,)
-        db.execute(sql, params)  
-
-        flash("Project deleted", "success")
-##back to list
-        return redirect("/calendar")        
-
-#-----------------------------------------------------------        
+        return render_template("pages/note_list.jinja", project=projects)
 #===========================================================
-@app.get("/project/new")
+# #-----------------------------------------------------------
+# Form page - make a chore
+# #-----------------------------------------------------------
+# @app.get("/chore/new")
+# def show_chore_form():
+# return render_template("pages/chore_form.jinja")
+# #-----------------------------------------------------------
+# Handel the chore form
+# #-----------------------------------------------------------
+# @app.post("/chore/new")
+# def process_chore_form():
+
+# name = request.form.get("name", "unknown").strip() #Default value if no chores
+# person_id = request.form.get("person", "unknown").strip()
+# priority = request.form.get("priority", "unknown").strip()
+
+# #connect to the DB
+# with connect_db() as db:
+# sql = """
+# INSERT INTO chores (name, person_id, priority)
+# VALUES (?, ?, ?)
+# """
+# params = (name, person_id, priority)
+# #run qeury
+# db.execute(sql, params)
+# flash(f"Chore {name} added successfully")
+# #done, return to list
+# return redirect("/")
+# #-----------------------------------------------------------
+@app.get("/project_new")
 def show_project_form():
     return render_template("pages/project_new.jinja")
 
 #===========================================================
-@app.post("/project/new")
+@app.post("/project_new")
 def process_project_form():
-    with connect_db() as db:
-        #get form data
+    #get form data
         name = request.form.get("name", "unknown").strip() #default value if no species
         deadline = request.form.get("deadline", "unknown").strip()
 
-        #connect to the DB
         with connect_db() as db:
             sql = """
                 INSERT INTO projects (name, deadline)
@@ -85,12 +104,12 @@ def process_project_form():
             params = (name, deadline)
 
             #run query
-            db.execute(sql, params) 
+            db.execute(sql, params)
 
             flash(f"Project {name} added successfully")
 
             #done, return to list
-            return redirect("/")
+            return redirect("/project_new")
 
 #===========================================================
 @app.get("/calendar")
@@ -125,7 +144,7 @@ def show_calendar_past_due():
         sql = """
             SELECT name, deadline
             FROM projects
-            WHERE status = 'Past due'
+            WHERE status = 'Pastdue'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
@@ -136,6 +155,23 @@ def show_calendar_past_due():
 def show_settings():
     return render_template("pages/settings.jinja")
 #===========================================================    
+#-----------------------------------------------------------
+@app.get("/project/<int:id>/delete")
+def delete_a_project(id):
+    with connect_db() as db:
+        ##delete project using its id
+        sql = """
+            DELETE FROM projects
+            WHERE id=?
+        """
+        params = (id,)
+        db.execute(sql, params)  
+
+        flash("Project deleted", "success")
+##back to list
+        return redirect("/calendar")        
+
+#-----------------------------------------------------------        
 
 # Configure the app
 load_dotenv()
