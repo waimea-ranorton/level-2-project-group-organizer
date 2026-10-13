@@ -6,7 +6,7 @@
     <nav id="Cal">
         <div class="Upcoming"> <a href="/calendar">Upcoming</a> </div>
         <div class="Finished"> <a href="/calendar/finished">Finished</a> </div>
-        <div class="Past due"> <a href="/calendar/pastdue">Past due</a> </div>
+        <div class="Past_due"> <a href="/calendar/past_due">Past due</a> </div>
     </nav> 
 
     <h2>Finished Projects</h2> 
@@ -14,9 +14,16 @@
         {% for project in projects %}
 
             <div class="tasks">
-                <h2>{{ project.name }} </h2>
-                <h2>{{ project.deadline }}</h2>
+                <h2>Project: </h2> <h3>{{ project.name }} </h3>
+                <h2>Deadline: </h2><h3>{{ project.deadline }}</h3>
+                
+                {% if project %} 
                 <p><a href="/project/{{ project.id }}/delete">delete</a></p>
+                {% endif %}
+
+                {% if project %} 
+                <p><a href="/project/{{ project.id }}/finished">finished</a></p>
+                {% endif %}
 
             </div>
 

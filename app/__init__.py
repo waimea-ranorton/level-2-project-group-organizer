@@ -11,17 +11,15 @@ from io import BytesIO
 import html
 from app.helpers import *
 
-
 # Create the app
 app = Flask(__name__)
-
 
 #===========================================================
 # App Routes Handlers
 #===========================================================
 
 #-----------------------------------------------------------
-# Home page - Show all notes
+# Home page - Show recent things
 #-----------------------------------------------------------
 #===========================================================
 @app.get("/")
@@ -54,37 +52,8 @@ def show_projects():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        return render_template("pages/note_list.jinja", project=projects)
+        return render_template("pages/project_list.jinja", project=projects)
 #===========================================================
-# #-----------------------------------------------------------
-# Form page - make a chore
-# #-----------------------------------------------------------
-# @app.get("/chore/new")
-# def show_chore_form():
-# return render_template("pages/chore_form.jinja")
-# #-----------------------------------------------------------
-# Handel the chore form
-# #-----------------------------------------------------------
-# @app.post("/chore/new")
-# def process_chore_form():
-
-# name = request.form.get("name", "unknown").strip() #Default value if no chores
-# person_id = request.form.get("person", "unknown").strip()
-# priority = request.form.get("priority", "unknown").strip()
-
-# #connect to the DB
-# with connect_db() as db:
-# sql = """
-# INSERT INTO chores (name, person_id, priority)
-# VALUES (?, ?, ?)
-# """
-# params = (name, person_id, priority)
-# #run qeury
-# db.execute(sql, params)
-# flash(f"Chore {name} added successfully")
-# #done, return to list
-# return redirect("/")
-# #-----------------------------------------------------------
 @app.get("/project_new")
 def show_project_form():
     return render_template("pages/project_new.jinja")
@@ -138,13 +107,13 @@ def show_calendar_finished():
 
         return render_template("pages/calendar_finished.jinja", projects=projects)
 #===========================================================   
-@app.get("/calendar/pastdue")
+@app.get("/calendar/past_due")
 def show_calendar_past_due():
     with connect_db() as db:
         sql = """
             SELECT name, deadline
             FROM projects
-            WHERE status = 'Pastdue'
+            WHERE status = 'Past_due'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
@@ -155,14 +124,14 @@ def show_calendar_past_due():
 def show_settings():
     return render_template("pages/settings.jinja")
 #===========================================================    
-#-----------------------------------------------------------
+
 @app.get("/project/<int:id>/delete")
 def delete_a_project(id):
     with connect_db() as db:
         ##delete project using its id
         sql = """
             DELETE FROM projects
-            WHERE id=?
+            WHERE id = ?
         """
         params = (id,)
         db.execute(sql, params)  
@@ -170,6 +139,9 @@ def delete_a_project(id):
         flash("Project deleted", "success")
 ##back to list
         return redirect("/calendar")        
+
+#----------------------------------------------------------- 
+#-Let user update a project to finsihed
 
 #-----------------------------------------------------------        
 
