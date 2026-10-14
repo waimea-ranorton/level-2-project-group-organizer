@@ -155,6 +155,22 @@ def mark_project_finished(id):
 ##back to list
         return redirect("/calendar")        
 
+#-----------------------------------------------------------   
+#-Let user update a project to unfinsihed
+@app.get("/project/<int:id>/unfinished")
+def mark_project_unfinished(id):
+    with connect_db() as db:
+        
+        sql = """
+            UPDATE projects SET status = "Unfinished" WHERE id = ?
+        """
+        params = (id,)
+        db.execute(sql, params)  
+
+        flash("Project status updated")
+##back to list
+        return redirect("/calendar")        
+
 #-----------------------------------------------------------        
 
 # Configure the app
