@@ -31,7 +31,7 @@ class ProjectsTable:
         VALUES
             ("English", "2079-08-17", "Unfinished"),
             ("Group speech", "2027-12-20", "Finished"),
-            ("Enviro presentation", "none", "Past due")
+            ("Enviro presentation", "2027-12-20", "Past due")
     """
 #-----------------------------------------------------
 class PeopleTable:

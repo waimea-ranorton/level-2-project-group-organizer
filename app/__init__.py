@@ -141,6 +141,19 @@ def show_settings():
     return render_template("pages/settings.jinja")
 #===========================================================    
 #-Let user update a project to finsihed
+@app.get("/project/<int:id>/finished")
+def mark_project_finished(id):
+    with connect_db() as db:
+        
+        sql = """
+            UPDATE projects SET status = "Finished" WHERE id = ?
+        """
+        params = (id,)
+        db.execute(sql, params)  
+
+        flash("Project finished", "Good job!")
+##back to list
+        return redirect("/calendar")        
 
 #-----------------------------------------------------------        
 
