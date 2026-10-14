@@ -54,6 +54,22 @@ def show_projects():
 
         return render_template("pages/project_list.jinja", project=projects)
 #===========================================================
+@app.get("/project/<int:id>/delete")
+def delete_a_project(id):
+    with connect_db() as db:
+        ##delete project using its id
+        sql = """
+            DELETE FROM projects
+            WHERE id = ?
+        """
+        params = (id,)
+        db.execute(sql, params)  
+
+        flash("Project deleted", "success")
+##back to list
+        return redirect("/calendar")        
+
+#----------------------------------------------------------- 
 @app.get("/project_new")
 def show_project_form():
     return render_template("pages/project_new.jinja")
@@ -85,7 +101,7 @@ def process_project_form():
 def show_calendar():
     with connect_db() as db:
         sql = """
-            SELECT name, deadline
+            SELECT id, name, deadline
             FROM projects
             WHERE status = 'Unfinished'
         """
@@ -98,7 +114,7 @@ def show_calendar():
 def show_calendar_finished():
     with connect_db() as db:
         sql = """
-            SELECT name, deadline
+            SELECT id, name, deadline
             FROM projects
             WHERE status = 'Finished'
         """
@@ -111,9 +127,9 @@ def show_calendar_finished():
 def show_calendar_past_due():
     with connect_db() as db:
         sql = """
-            SELECT name, deadline
+            SELECT id, name, deadline
             FROM projects
-            WHERE status = 'Past_due'
+            WHERE status = 'Past due'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()
@@ -124,23 +140,6 @@ def show_calendar_past_due():
 def show_settings():
     return render_template("pages/settings.jinja")
 #===========================================================    
-
-@app.get("/project/<int:id>/delete")
-def delete_a_project(id):
-    with connect_db() as db:
-        ##delete project using its id
-        sql = """
-            DELETE FROM projects
-            WHERE id = ?
-        """
-        params = (id,)
-        db.execute(sql, params)  
-
-        flash("Project deleted", "success")
-##back to list
-        return redirect("/calendar")        
-
-#----------------------------------------------------------- 
 #-Let user update a project to finsihed
 
 #-----------------------------------------------------------        
