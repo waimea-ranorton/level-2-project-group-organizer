@@ -147,3 +147,17 @@ p {
     text-align: center;
     margin-block: 0.5rem;
 }
+
+.Deadline {
+    padding-top: 1rem;
+}
+
+.Button1 {
+    display: flex;
+    
+}
+
+.Button2 {
+    display: flex;
+    
+}

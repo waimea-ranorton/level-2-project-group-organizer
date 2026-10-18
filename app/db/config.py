@@ -22,16 +22,16 @@ class ProjectsTable:
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             name   TEXT NOT NULL DEFAULT project,
             deadline   TEXT DEFAULT None,
-            status   TEXT NOT NULL
+            status   TEXT NOT NULL DEFAULT Unfinished
         )
     """    
 
     SEED_DATA = """
         INSERT INTO projects (name, deadline, status)
         VALUES
+            ("Enviro presentation", "2027-12-20", "Past-due"),
             ("English", "2079-08-17", "Unfinished"),
-            ("Group speech", "2027-12-20", "Finished"),
-            ("Enviro presentation", "2027-12-20", "Past due")
+            ("Group speech", "2027-12-20", "Past-due")
     """
 #-----------------------------------------------------
 class PeopleTable:

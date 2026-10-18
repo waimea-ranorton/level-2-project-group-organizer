@@ -129,7 +129,7 @@ def show_calendar_past_due():
         sql = """
             SELECT id, name, deadline
             FROM projects
-            WHERE status = 'Past due'
+            WHERE status = 'Past-due'
         """
         params = ()
         projects = db.execute(sql, params).fetchall()

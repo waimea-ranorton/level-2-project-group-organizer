@@ -13,9 +13,9 @@
      <section id="projects">
         {% for project in projects %}
 
-            <div class="tasks">
+            <div class="project">
                 <h2>Project: </h2> <h3>{{ project.name }} </h3>
-                <h2>Deadline: </h2><h3>{{ project.deadline }}</h3>
+                <h3>Deadline: </h3><h4>{{ project.deadline }}</h4>
                 
                 {% if project %} 
                 <p><a href="/project/{{ project.id }}/delete">delete</a></p>

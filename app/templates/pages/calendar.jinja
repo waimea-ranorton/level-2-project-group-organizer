@@ -14,36 +14,23 @@
         {% for project in projects %}
 
             <div class="project">
-                <!-- summery -->
-                <button type="button" id="dropdown" class="dropbtn" <h2>Project: </h2> <h3>{{ project.name }} </h3>
-                </button>
-                <div><h2>Deadline: </h2><h3>{{ project.deadline }}</h3>
+                <h2>Project: </h2> <h3>{{ project.name }} </h3>
+                <div class="Deadline">
+                    <h3>Deadline: </h3><h4>{{ project.deadline }}</h4>
+                </div>    
+                
+                <div class="Button1">
+                    {% if project %} 
+                    <p><a href="/project/{{ project.id }}/delete">delete</a></p>
+                    {% endif %}
+                </div>    
+
+                <div class="Button2">
+                    {% if project %} 
+                    <p><a href="/project/{{ project.id }}/finished">finished</a></p>
+                    {% endif %}
                 </div>
-{# <div class="dropdown-container">
-    <!-- The trigger button -->
-    <button type="button" id="dropdownBtn" class="dropbtn">
-        Click Menu
-    </button>
-
-    <!-- The hidden dropdown content -->
-    <div id="dropdownMenu" class="dropdown-content hidden">
-        {% for item in menu_items %}
-            <a href="{{ item.url }}">{{ item.name }}</a>
-        {% endfor %}
-        <!-- Or static links -->
-        <a href="#">Profile</a>
-        <a href="#">Settings</a>
-        <a href="#">Logout</a>
-    </div>
-</div>                 #}
-                {% if project %} 
-                <p><a href="/project/{{ project.id }}/delete">delete</a></p>
-                {% endif %}
-
-                {% if project %} 
-                <p><a href="/project/{{ project.id }}/finished">finished</a></p>
-                {% endif %}
-
+                
             </div>
 
         {% else %}
