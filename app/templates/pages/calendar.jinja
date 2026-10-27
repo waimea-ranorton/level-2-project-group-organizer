@@ -19,18 +19,19 @@
                     <h3>Deadline: </h3><h4>{{ project.deadline }}</h4>
                 </div>    
                 
-                <div class="Button1">
-                    {% if project %} 
-                    <p><a href="/project/{{ project.id }}/delete">delete</a></p>
-                    {% endif %}
-                </div>    
+                <div class="Buttons">
+                    <div class="1">
+                        {% if project %} 
+                        <p><a href="/project/{{ project.id }}/delete">delete</a></p>
+                        {% endif %}
+                    </div>
 
-                <div class="Button2">
-                    {% if project %} 
-                    <p><a href="/project/{{ project.id }}/finished">finished</a></p>
-                    {% endif %}
-                </div>
-                
+                    <div class="2">
+                        {% if project %} 
+                        <p><a href="/project/{{ project.id }}/finished">finished</a></p>
+                        {% endif %}
+                    </div>
+                </div>    
             </div>
 
         {% else %}

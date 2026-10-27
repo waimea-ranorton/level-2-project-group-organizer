@@ -50,7 +50,10 @@ Then inserted test data to see how they worked.
 
 ## Creating pages
 
+My cliant was unsure about the nessesity of the "home page", so I first developed the other pages so they could see what the site would look like without it, after some disscussion they decided the home page didnt serve much purpose, and they would perfer the app opens straight to the upcoming projects calander.
 
+I agreed to this idea, I think this could increase productivity while using the app, seen users can get where they want to go quicker.
+![Alt text](screenshots/flow5.png)
 ## Sprint Review
 
 Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.

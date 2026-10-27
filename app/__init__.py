@@ -35,8 +35,8 @@ def show_project():
 
         return render_template("pages/home.jinja")
 #===========================================================
-@app.get("/projects")
-def show_projects():
+@app.get("/project")
+def show_project_details():
     with connect_db() as db:
         sql = """
             SELECT id, name, deadline, status
@@ -52,7 +52,7 @@ def show_projects():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        return render_template("pages/project_list.jinja", project=projects)
+        return render_template("pages/project.jinja", project=projects)
 #===========================================================
 @app.get("/project/<int:id>/delete")
 def delete_a_project(id):
@@ -154,20 +154,6 @@ def mark_project_finished(id):
         flash("Project finished", "Good job!")
 ##back to list
         return redirect("/calendar")        
-
-#===========================================================
-@app.post("/project")
-def show_project_details():
-     with connect_db() as db:
-        sql = """
-                name = request.form.get("name", "unknown").strip() #default value if no species
-                deadline = request.form.get("deadline", "unknown").strip()
-                status = request.form.get("deadline", "unknown").strip()
-        """
-        params = ()
-        projects = db.execute(sql, params).fetchall()
-
-        return render_template("pages/projects.jinja")
 #-----------------------------------------------------------   
 #-Let user update a project to unfinsihed
 @app.get("/project/<int:id>/unfinished")
