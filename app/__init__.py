@@ -21,19 +21,46 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Home page - Show recent things
 #-----------------------------------------------------------
+
 #===========================================================
 @app.get("/")
-def show_project():
+def show_calendar():
     with connect_db() as db:
         sql = """
-                SELECT id, name, deadline, status
-                FROM projects
-                ORDER BY name DESC
+            SELECT id, name, deadline
+            FROM projects
+            WHERE status = 'Unfinished'
         """
         params = ()
-        tasks = db.execute(sql, params).fetchall()
+        projects = db.execute(sql, params).fetchall()
 
-        return render_template("pages/home.jinja")
+        return render_template("pages/calendar.jinja", projects=projects)
+#===========================================================  
+@app.get("/calendar/finished")
+def show_calendar_finished():
+    with connect_db() as db:
+        sql = """
+            SELECT id, name, deadline
+            FROM projects
+            WHERE status = 'Finished'
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/calendar_finished.jinja", projects=projects)
+#===========================================================   
+@app.get("/calendar/past_due")
+def show_calendar_past_due():
+    with connect_db() as db:
+        sql = """
+            SELECT id, name, deadline
+            FROM projects
+            WHERE status = 'Past-due'
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/calendar_past_due.jinja", projects=projects)
 #===========================================================
 @app.get("/project")
 def show_project_details():
@@ -95,46 +122,6 @@ def process_project_form():
 
             #done, return to list
             return redirect("/project_new")
-
-#===========================================================
-@app.get("/calendar")
-def show_calendar():
-    with connect_db() as db:
-        sql = """
-            SELECT id, name, deadline
-            FROM projects
-            WHERE status = 'Unfinished'
-        """
-        params = ()
-        projects = db.execute(sql, params).fetchall()
-
-        return render_template("pages/calendar.jinja", projects=projects)
-#===========================================================  
-@app.get("/calendar/finished")
-def show_calendar_finished():
-    with connect_db() as db:
-        sql = """
-            SELECT id, name, deadline
-            FROM projects
-            WHERE status = 'Finished'
-        """
-        params = ()
-        projects = db.execute(sql, params).fetchall()
-
-        return render_template("pages/calendar_finished.jinja", projects=projects)
-#===========================================================   
-@app.get("/calendar/past_due")
-def show_calendar_past_due():
-    with connect_db() as db:
-        sql = """
-            SELECT id, name, deadline
-            FROM projects
-            WHERE status = 'Past-due'
-        """
-        params = ()
-        projects = db.execute(sql, params).fetchall()
-
-        return render_template("pages/calendar_past_due.jinja", projects=projects)
 #===========================================================      
 @app.get("/settings")
 def show_settings():
