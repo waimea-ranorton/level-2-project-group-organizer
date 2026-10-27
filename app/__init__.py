@@ -79,7 +79,7 @@ def show_project_details():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        return render_template("pages/project.jinja", project=projects)
+        return render_template("pages/project.jinja", projects=projects)
 #===========================================================
 @app.get("/project/<int:id>/delete")
 def delete_a_project(id):

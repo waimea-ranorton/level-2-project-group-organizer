@@ -4,7 +4,7 @@
 {% block content %}
 
     <nav id="Cal">
-        <div class="Upcoming"> <a href="/calendar">Upcoming</a> </div>
+        <div class="Upcoming"> <a href="/">Upcoming</a> </div>
         <div class="Finished"> <a href="/calendar/finished">Finished</a> </div>
         <div class="Past_due"> <a href="/calendar/past_due">Past due</a> </div>
     </nav> 
@@ -20,19 +20,18 @@
                 </div>    
                 
                 <div class="Buttons">
-                    <div class="1">
                         {% if project %} 
                         <p><a href="/project/{{ project.id }}/delete">delete</a></p>
                         {% endif %}
-                    </div>
 
-                    <div class="2">
                         {% if project %} 
                         <p><a href="/project/{{ project.id }}/finished">finished</a></p>
                         {% endif %}
-                    </div>
-                </div>    
-            </div>
+                        
+                        {%if project %}
+                        <P><a href="/project">Expand</a></P>
+                        {% endif %}
+                </div>
 
         {% else %}
 
