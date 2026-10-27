@@ -71,7 +71,7 @@ def show_project_details():
             ORDER BY name DESC
         """
         params = ()
-        notes = db.execute(sql, params).fetchall()
+        projects = db.execute(sql, params).fetchall()
 
         flash("Test message")
         flash("Test SUCCESS message", "success")
