@@ -161,3 +161,26 @@ p {
     display: flex;
     
 }
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    max-width: 10rem;
+    @media (width >= 500rem) {
+        grid-template-columns: 1rem 1rem;
+}
+
+.project {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--back-col-panel);
+    margin: auto;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    text-indent: 1rem;
+    border-radius: 1rem;
+}

@@ -155,6 +155,19 @@ def mark_project_finished(id):
 ##back to list
         return redirect("/calendar")        
 
+#===========================================================
+@app.post("/project")
+def show_project_details():
+     with connect_db() as db:
+        sql = """
+                name = request.form.get("name", "unknown").strip() #default value if no species
+                deadline = request.form.get("deadline", "unknown").strip()
+                status = request.form.get("deadline", "unknown").strip()
+        """
+        params = ()
+        projects = db.execute(sql, params).fetchall()
+
+        return render_template("pages/projects.jinja")
 #-----------------------------------------------------------   
 #-Let user update a project to unfinsihed
 @app.get("/project/<int:id>/unfinished")
