@@ -54,7 +54,6 @@ My cliant was unsure about the nessesity of the "home page", so I first develope
 
 I agreed to this idea, I think this could increase productivity while using the app, seen users can get where they want to go quicker.
 ![Alt text](screenshots/flow5.png)
-## Sprint Review
 
 ## Small update
 
@@ -63,4 +62,5 @@ My cliant originally mentioned wanting a settings page, however they think that 
 I agreed with them and removed it.
 ![Alt text](screenshots/flow6.png)
 
+## Sprint Review
 Through breif development of my end users app we were able to understand what they actaully wanted out of the app before I developed it too far, I think communicating with my user this way was very good as I didnt waste time making pages they would later not want.
