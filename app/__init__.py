@@ -122,10 +122,7 @@ def process_project_form():
 
             #done, return to list
             return redirect("/project_new")
-#===========================================================      
-@app.get("/settings")
-def show_settings():
-    return render_template("pages/settings.jinja")
+
 #===========================================================    
 #-Let user update a project to finsihed
 @app.get("/project/<int:id>/finished")

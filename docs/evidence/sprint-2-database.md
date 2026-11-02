@@ -56,5 +56,11 @@ I agreed to this idea, I think this could increase productivity while using the 
 ![Alt text](screenshots/flow5.png)
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+## Small update
 
+My cliant originally mentioned wanting a settings page, however they think that for personal use this website will be that it would be unessisary, and they would only do such a thing if they wanted to develop the app for public use, so they asked me to remove it.
+
+I agreed with them and removed it.
+![Alt text](screenshots/flow6.png)
+
+Through breif development of my end users app we were able to understand what they actaully wanted out of the app before I developed it too far, I think communicating with my user this way was very good as I didnt waste time making pages they would later not want.
