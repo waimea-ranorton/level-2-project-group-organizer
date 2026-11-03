@@ -1,18 +1,19 @@
 # Group Organizer Project
+
 by Riley Norton 
 
 ## Project Description
 
-This is an app that ...
+This is an app that organizes group projects for users to keep track of them.
 
 The app has the following key features:
-- Feature one
-- Feature two
-- Feature three
-- ...
+- You can add a project
+- You can look through your projects
 
 
 ## Supporting Documents
+
+*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-ranorton.github.io/level-2-project-group-organizer/)*
 
 Task Instructions:
 - [Instruction documents](docs/instructions/)
@@ -26,29 +27,12 @@ Project Evidence
 - [Review: Project Final Review](docs/evidence/system-review.md)
 
 
-## Test Accounts
-
-The following user accounts have been created to demonstrate the features of the system:
-
-Test User 1:
-- Username: xxxxx
-- Password: xxxxx
-
-Test User 2:
-- Username: xxxxx
-- Password: xxxxx
-
-...
-
-
 ## Technologies Used
 
 - [Flask](https://flask.palletsprojects.com/) as the web framework
 - [Python](https://www.python.org/) as the programming language used
 - [SQLite](https://sqlite.org/) for the database
 - [Jinja2](https://jinja.palletsprojects.com/templates/) for page templating
-
-*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-ranorton.github.io/level-2-project-group-organizer/)*
 
 
 ## Project Structure

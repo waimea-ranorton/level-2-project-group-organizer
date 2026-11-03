@@ -1,7 +1,7 @@
-title: Flask Project Template
+title: Group Project Organizer
 description: A starter Flask, Jinja and SQLite project
-author: Digital Technologies Dept.
+author: Riley Norton
 
 # If development is true, guides will be shown
-development: true
-picotheme: azure
+development: false
+picotheme: blue
