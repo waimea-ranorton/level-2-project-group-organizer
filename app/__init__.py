@@ -21,7 +21,8 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Home page - Show recent things
 #-----------------------------------------------------------
-
+def get_project(id):
+    return next((item for item in projects if item["id"] == id), None)
 #===========================================================
 @app.get("/")
 def show_calendar():
@@ -62,24 +63,30 @@ def show_calendar_past_due():
 
         return render_template("pages/calendar_past_due.jinja", projects=projects)
 #===========================================================
-@app.get("/project")
-def show_project_details():
+@app.get("/project/<int:id>")
+def show_project_details(id):
     with connect_db() as db:
-        sql = """
-            SELECT id, name, deadline, status
-            FROM projects
-            ORDER BY name DESC
-        """
-        params = ()
-        projects = db.execute(sql, params).fetchall()
+        project = get_project(id)
 
-        flash("Test message")
-        flash("Test SUCCESS message", "success")
-        flash("Test INFO message", "info")
-        flash("Test WARNING message", "warning")
-        flash("Test ERROR message", "error")
+        if project:
+            sql = """
+                SELECT id, name, deadline, status
+                FROM projects
+                ORDER BY name DESC
+            """
+            params = ()
+            projects = db.execute(sql, params).fetchall()
 
-        return render_template("pages/project.jinja", projects=projects)
+            flash("Test message")
+            flash("Test SUCCESS message", "success")
+            flash("Test INFO message", "info")
+            flash("Test WARNING message", "warning")
+            flash("Test ERROR message", "error")
+
+            return render_template("pages/project.jinja", projects=projects)
+
+        else:
+            abort(404)    
 #===========================================================
 @app.get("/project/<int:id>/delete")
 def delete_a_project(id):
